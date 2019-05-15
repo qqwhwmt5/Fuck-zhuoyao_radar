@@ -83,7 +83,7 @@ module.exports = {
         var z = Math.sqrt(lng * lng + lat * lat) + 0.00002 * Math.sin(lat * x_PI);
         var theta = Math.atan2(lat, lng) + 0.000003 * Math.cos(lng * x_PI);
         var bd_lng = z * Math.cos(theta) + 0.0065 - 0.00165;
-        var bd_lat = z * Math.sin(theta) + 0.006 - 0.00293;
+        var bd_lat = z * Math.sin(theta) + 0.006 - 0.00333;
          return [bd_lng, bd_lat]
     },
     importPosition: function() {},
